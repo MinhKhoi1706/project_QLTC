@@ -7,12 +7,19 @@ body {
     height: 60px;
     width: 100%;
     display: flex;
-    align-items: center;
 }
 
 .head > p {
     color: white;
+    margin-top: 15px;
     margin: auto;
+}
+.account-dropdown{
+    margin-top: 3px;
+    margin: auto;
+}
+.title {
+    padding-left: 10px;
 }
 
 .section {
@@ -43,7 +50,7 @@ body {
     background-color: white;
     height: 90px;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -59,7 +66,7 @@ body {
     background-color: white;
     height: 90px;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -81,17 +88,16 @@ body {
     background-color: white;
     height: 90px;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     /* padding-left: 280px; */
     padding-top: 5px;
     margin-top: 30px;
 }
-.box3 > h3 {
+/* .box3 > h3 {
     padding-left: 300px;
-}
+} */
 .box3 > p {
-    padding-left: 320px;
     color: #22c55e;
     font-size: 18px;
 }
@@ -100,7 +106,7 @@ body {
     background-color: white;
     height: 60%;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     margin-top: 30px;
     padding-left: 20px;
@@ -131,11 +137,11 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.box5{
+.box5 {
     background-color: white;
     height: 90px;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -144,51 +150,51 @@ body {
     justify-content: space-between;
 }
 
-.box5 > input,select{
+.box5 > input,
+select {
     height: 42px;
     width: 150px;
 }
 
-.box5 > button{
+.box5 > button {
     background-color: #6366f1;
     color: white;
     width: 150px;
     height: 42px;
 }
 
-.box6{
+.box6 {
     background-color: white;
     height: 60%;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     margin-top: 30px;
 }
 
-.box6 > p{
-    color: red ;
+.box6 > p {
+    color: red;
     padding-top: 20px;
     padding-left: 20px;
 }
-.box6 > form >button{
+.box6 > form > button {
     background-color: #1d4ed8;
     height: 45px;
     width: 38px;
     border: none;
-    border-radius:8px ;
+    border-radius: 8px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.box6 > form > input{
+.box6 > form > input {
     width: 160px;
     height: 42px;
 }
 
-.box6 > form{
+.box6 > form {
     display: flex;
     justify-content: center;
-    
 }
 .category-list li {
     display: flex;
@@ -196,20 +202,20 @@ body {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
 }
-.box6 > ul > li > span > a{
+.box6 > ul > li > span > a {
     color: red;
 }
 
-.box6 .pagination{
+.box6 .pagination {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 }
 
-.box7{
+.box7 {
     background-color: white;
     height: 90px;
     width: 720px;
-   margin:auto;
+    margin: auto;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -217,15 +223,15 @@ body {
     margin-top: 30px;
 }
 
-.box7 > p{
+.box7 > p {
     color: red;
 }
 
-.box8{
+.box8 {
     background-color: white;
     height: 90px;
     width: 720px;
-    margin:auto;
+    margin: auto;
     border-radius: 12px;
     margin-top: 30px;
 }
@@ -238,8 +244,43 @@ body {
     align-items: center;
     justify-content: center;
 }
-.foot > p{
+.foot > p {
     color: white;
 }
 
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.account-button {
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#toggle:checked + .dropdown-menu {
+    display: block;
+}
